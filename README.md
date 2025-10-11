@@ -6,13 +6,17 @@ All folders are placeholders for future development, including Docker, Kubernete
 
 ## Project Structure
 
+
 flask-api-project/
-├── app/ # Flask application code will go here
-├── docker/ # Dockerfile and related files
-├── k8s/ # Kubernetes manifests (Deployment, Service, etc.)
-├── logging/loki/ # Logging configuration for Loki or ELK
-├── .github/workflows/ # CI/CD pipeline configuration
-└── README.md
+- app/                   (Flask application code will go here)
+- docker/                (Dockerfile and related files)
+- k8s/                   (Kubernetes manifests: Deployment, Service, etc.)
+- logging/
+  - loki/                (Logging configuration for Loki or ELK)
+- .github/
+  - workflows/           (CI/CD pipeline configuration)
+- README.md
+
 
 
 ## Notes
