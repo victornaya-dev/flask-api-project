@@ -1,0 +1,18 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: flask-api-sm
+  namespace: default                # same namespace as Prometheus
+  labels:
+    release: prometheus-stack       # must match your Helm release
+spec:
+  selector:
+    matchLabels:
+      app: flask-api
+  namespaceSelector:
+    matchNames:
+      - default
+  endpoints:
+    - port: http                    # same name as in the Service
+      path: /metrics
+      interval: 10s
