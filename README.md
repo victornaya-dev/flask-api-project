@@ -64,3 +64,45 @@ Import the dashboard JSON located at:
 ```bash
 k8s/prometheus/grafana-dashboard.json
 ```
+
+### Monitoring & Metrics
+
+Prometheus scrapes metrics from the Flask app using the /metrics endpoint.
+The Grafana dashboard includes:
+- CPU usage per container
+- Memory usage per container
+- Requests per second
+- Average latency
+- Pod status (Running / Pending)
+
+  Docker Image (Local Build)
+
+####  If you want to build and run the Docker image locally:
+
+Build the image:
+
+```bash
+docker build -t myapp_flask_v003:latest .
+```
+
+(Optional) Tag it if you want to push later:
+```bash
+docker tag myapp_flask_v003:latest victordock218/myapp_flask_v003:tagname
+```
+
+Run the container locally:
+```bash
+docker run -p 80:80 myapp_flask_v003:latest
+```
+
+You can now access the Flask API at:
+```bash
+http://localhost:80
+```
+
+### Notes
+
+- Future updates will include:
+- Additional Flask API endpoints
+- Extended Kubernetes manifests (ConfigMaps, Secrets, etc.)
+- Advanced Prometheus alerts and Grafana dashboards
