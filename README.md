@@ -1,35 +1,25 @@
-# Flask API Project (In Progress)
+# Flask API Project
 
 ## Overview
-This repository contains the **initial structure** for a Flask API project.  
-All folders are placeholders for future development, including Docker, Kubernetes manifests, logging, and CI/CD workflows.
+This repository contains a **Flask API project** deployed on Kubernetes with monitoring using Prometheus and Grafana.
 
 ## Project Structure
 
-
 flask-api-project/
-- app/                   (Flask application code will go here)
-- docker/                (Dockerfile and related files)
-- k8s/                   (Kubernetes manifests: Deployment, Service, etc.)
-- logging/
-  - loki/                (Logging configuration for Loki or ELK)
-- .github/
-  - workflows/           (CI/CD pipeline configuration)
+- app/
+  - static/        (Static files)
+  - templates/     (HTML templates)
+- docker/          (Dockerfile and related files)
+- k8s/             (Kubernetes manifests: Deployment, Service, HPA, etc.)
+  - prometheus/    (Prometheus & Grafana dashboards and configs)
 - README.md
 
-
-
 ## Notes
-- Currently, only folder structure and placeholders are included.
-- Future updates will add:
+- Future updates will include:
   - Flask API endpoints
   - Dockerfile and Docker images
   - Kubernetes deployment and service files
   - Monitoring with Prometheus and Grafana
-  - Logging with Loki/ELK
-  - CI/CD pipeline using GitHub Actions
 
 ## Status
-**In progress** – This is the development branch structure. Main features will be added soon.
-
-
+**In progress** – The project structure is ready; main features will be implemented soon.
