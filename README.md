@@ -98,6 +98,17 @@ You can now access the Flask API at:
 http://localhost:80
 ```
 
+## TEST
+Once your Flask app is running (for example, via Docker, Kubernetes, or directly with python app.py), you can test it with:
+```bash
+curl http://localhost:30008/api/data
+```
+
+Expected response:
+```bash
+{"message": "Hello from flask API!", "status": "success"}
+```
+
 ### Notes
 
 - Future updates will include:
