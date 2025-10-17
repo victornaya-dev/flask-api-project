@@ -5,7 +5,7 @@ This repository contains a **Flask API project** deployed on Kubernetes with mon
 
 ## Project Structure
 
-flask-api-project/
+flask-kubernetes-api/
 - app/
   - static/        (Static files)
   - templates/     (HTML templates)
@@ -25,12 +25,12 @@ flask-api-project/
 
 ### Clone the project
 ```bash
-git clone https://github.com/victornaya-dev/flask-api-project
+git clone https://github.com/victornaya-dev/flask-kubernetes-api
 ```
 Apply all Kubernetes manifests
 
 ```bash
-kubectl apply -f flask-api-project/k8s -R
+kubectl apply -f flask-kubernetes-api/k8s -R
 ```
 
 Note: This assumes Prometheus Operator is installed.
