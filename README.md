@@ -49,6 +49,7 @@ Open the API in your browser or via curl at:
 ```bash
 http://<node-ip>:30008
 ```
+![Flask API Image](docs/cloud.png)
 
 For local clusters (like Minikube), you can use:
 
@@ -73,9 +74,11 @@ The Grafana dashboard includes:
 - Average latency
 - Pod status (Running / Pending)
 
-  Docker Image (Local Build)
+![Grafana Image](docs/grafana.png)
 
-####  If you want to build and run the Docker image locally:
+### Docker Image (Local Build)
+
+If you want to build and run the Docker image locally:
 
 Build the image:
 
@@ -108,6 +111,8 @@ Expected response:
 ```bash
 {"message": "Hello from flask API!", "status": "success"}
 ```
+![Curl Image](docs/curl.png)
+
 
 ### Notes
 
