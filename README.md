@@ -11,15 +11,9 @@ flask-on-kubernetes/
   - templates/     (HTML templates)
 - docker/          (Dockerfile and related files)
 - k8s/             (Kubernetes manifests: Deployment, Service, HPA, etc.)
-- prometheus/    (Prometheus & Grafana dashboards and configs)
+  - prometheus/    (Prometheus & Grafana dashboards and configs)
 - README.md
 
-## Notes
-- Future updates will include:
-  - Flask API endpoints
-  - Dockerfile and Docker images
-  - Kubernetes deployment and service files
-  - Monitoring with Prometheus and Grafana
 
 ## Quick Start
 
@@ -76,11 +70,12 @@ The Grafana dashboard includes:
 
 ![Grafana Image](docs/grafana.png)
 
-### Docker Image (Local Build)
+### Docker Image (Optional)
 
-If you want to build and run the Docker image locally:
+The Docker image for this project is available on Docker Hub:
+victordock218/myapp_flask_v003:tagname
 
-Build the image:
+However, you can also build and run the image locally if you prefer to customize it.
 
 ```bash
 docker build -t myapp_flask_v003:latest .
@@ -114,9 +109,4 @@ Expected response:
 ![Curl Image](docs/curl.png)
 
 
-### Notes
 
-- Future updates will include:
-- Additional Flask API endpoints
-- Extended Kubernetes manifests (ConfigMaps, Secrets, etc.)
-- Advanced Prometheus alerts and Grafana dashboards
