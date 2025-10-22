@@ -14,12 +14,6 @@ flask-on-kubernetes/
 - prometheus/    (Prometheus & Grafana dashboards and configs)
 - README.md
 
-## Notes
-- Future updates will include:
-  - Flask API endpoints
-  - Dockerfile and Docker images
-  - Kubernetes deployment and service files
-  - Monitoring with Prometheus and Grafana
 
 ## Quick Start
 
