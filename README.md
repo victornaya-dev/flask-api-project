@@ -70,11 +70,12 @@ The Grafana dashboard includes:
 
 ![Grafana Image](docs/grafana.png)
 
-### Docker Image (Local Build)
+### Docker Image (Optional)
 
-If you want to build and run the Docker image locally:
+The Docker image for this project is available on Docker Hub:
+victordock218/myapp_flask_v003:tagname
 
-Build the image:
+However, you can also build and run the image locally if you prefer to customize it.
 
 ```bash
 docker build -t myapp_flask_v003:latest .
@@ -108,9 +109,4 @@ Expected response:
 ![Curl Image](docs/curl.png)
 
 
-### Notes
 
-- Future updates will include:
-- Additional Flask API endpoints
-- Extended Kubernetes manifests (ConfigMaps, Secrets, etc.)
-- Advanced Prometheus alerts and Grafana dashboards
