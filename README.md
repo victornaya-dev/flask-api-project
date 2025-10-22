@@ -11,7 +11,7 @@ flask-on-kubernetes/
   - templates/     (HTML templates)
 - docker/          (Dockerfile and related files)
 - k8s/             (Kubernetes manifests: Deployment, Service, HPA, etc.)
-- prometheus/    (Prometheus & Grafana dashboards and configs)
+  - prometheus/    (Prometheus & Grafana dashboards and configs)
 - README.md
 
 
