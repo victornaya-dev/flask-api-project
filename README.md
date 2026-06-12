@@ -5,6 +5,7 @@ This repository contains a **Flask API project** deployed on Kubernetes with mon
 
 ## Project Structure
 
+```
 flask-on-kubernetes/
 ├── app/
 │   ├── static/              # Static files
@@ -14,6 +15,7 @@ flask-on-kubernetes/
 ├── k8s/                     # Kubernetes manifests
 │   └── prometheus/          # Prometheus & Grafana configs
 └── README.md
+```
 
 ## Quick Start
 
