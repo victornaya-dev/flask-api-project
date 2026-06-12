@@ -6,14 +6,14 @@ This repository contains a **Flask API project** deployed on Kubernetes with mon
 ## Project Structure
 
 flask-on-kubernetes/
-- app/
-  - static/        (Static files)
-  - templates/     (HTML templates)
-- docker/          (Dockerfile and related files)
-- k8s/             (Kubernetes manifests: Deployment, Service, HPA, etc.)
-  - prometheus/    (Prometheus & Grafana dashboards and configs)
-- README.md
-
+├── app/
+│   ├── static/              # Static files
+│   └── templates/           # HTML templates
+├── docker/                  # Dockerfile and related files
+├── docs/                    # Screenshots
+├── k8s/                     # Kubernetes manifests
+│   └── prometheus/          # Prometheus & Grafana configs
+└── README.md
 
 ## Quick Start
 
